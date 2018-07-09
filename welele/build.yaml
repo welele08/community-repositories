@@ -1,0 +1,12 @@
+## Most of the configurations are optional, just build.target and repository.description are required.
+repository:
+# REPOSITORY Definition. It contains the description and option regarding your entropy repository.
+   description: welele's repository # REQUIRED!!!
+   # This is your repository description.
+build:
+# BUILD Definition. It contains description and options regarding your emerge build.
+  target: # REQUIRED!!!
+    - media-video/motion
+  equo:
+    repository: main
+    # You can build against main (sabayonlinux.org) or weekly. It is strongly encouraged to keep default
