@@ -1,11 +1,11 @@
 #!/bin/bash
 
-if [ ! -e ./sark-functions.sh ]; then
+if [ ! -e ../sark-functions.sh ]; then
     echo "sabayon-sark package must be installed"
     exit 1
 fi
 
-. ./sark-functions.sh
+. ../sark-functions.sh
 
 if [ ! -e build.yaml ]; then
     echo "Must be run from a repository directory containing a build.yaml"
@@ -22,5 +22,5 @@ export DISTFILES=/usr/portage/distfiles
 printenv | sort
 
 export REPOSITORY_NAME=welele
-build_clean welele
+export CLEAN_PHASE="true"
 build_all ${BUILD_ARGS}
