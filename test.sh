@@ -23,4 +23,5 @@ printenv | sort
 
 export REPOSITORY_NAME=welele
 export CLEAN_PHASE="true"
+export CLEAN_CACHE=1
 build_all ${BUILD_ARGS}

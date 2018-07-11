@@ -286,7 +286,7 @@ then
   echo "Build successfully"
 else
   echo "Build phase failed. Exiting"
-  docker rm -f $CID
+  d$COMMIT_EIT_IMAGEocker rm -f $CID
   exit 1
 fi
 
@@ -304,8 +304,9 @@ if [ "$CHECK_BUILD_DIFFS" -eq 1 ]; then
     exit 0
   else
     echo "${TO_INJECT[@]} packages needs to be injected"
-    cd ${VAGRANT_DIR}/artifact/${REPOSITORY_NAME}-binhost/
+    pushd ${VAGRANT_DIR}/artifacts/${REPOSITORY_NAME}-binhost/
     cp -rf "${TO_INJECT[@]}" $TEMPDIR/
+    popd
   fi
 else
   # Creating our permanent binhost
