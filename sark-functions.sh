@@ -286,7 +286,7 @@ then
   echo "Build successfully"
 else
   echo "Build phase failed. Exiting"
-  d$COMMIT_EIT_IMAGEocker rm -f $CID
+  docker rm -f $CID
   exit 1
 fi
 
