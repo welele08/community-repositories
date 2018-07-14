@@ -439,7 +439,7 @@ pushd ${VAGRANT_DIR}/repositories/$REPO_NAME
 ### XXX: Libchecks in there!
 irc_msg "Repository \"${REPO_NAME}\" build starting."
 env -i REPOSITORY_NAME=$REPO_NAME CLEAN_CACHE=$CLEAN_CACHE REPOSITORIES=$REPOSITORIES TEMPLOG=$TEMPLOG /bin/bash -c "
-  . /sbin/sark-functions.sh
+  . /vagrant/repositories/sark-functions.sh
   load_env_from_yaml \"build.yaml\"
 { build_all \"\$BUILD_ARGS\"; } 1>&2 > \$TEMPLOG "
 NOW=$(date +"%Y-%m-%d")
