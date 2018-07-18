@@ -6,6 +6,10 @@ build:
       install:
         - sci-libs/lapack-reference
   emerge:
+    script:
+      pre:
+        #- echo "toto"
+        - [ ! -e /usr/bin/gradle ]&&ln -s /usr/bin/gradle-* /usr/bin/gradle
     # Install each package separately
     split_install: 1
     features: assume-digests binpkg-logs compressdebug config-protect-if-modified distlocks ebuild-locks fixlafiles merge-sync news parallel-fetch preserve-libs protect-owned -sandbox sfperms splitdebug strict unknown-features-warn unmerge-logs unmerge-orphans userfetch usersandbox usersync xattr -userpriv
@@ -14,5 +18,5 @@ build:
     - sage-on-gentoo
   target:
 #    - sci-mathematics/scilab::science
-#    - sci-mathematics/geogebra::gentoo
+    - sci-mathematics/geogebra::gentoo
     - sci-mathematics/giac::sage-on-gentoo
