@@ -22,6 +22,6 @@ export DISTFILES=/usr/portage/distfiles
 printenv | sort
 
 #export REPOSITORY_NAME=capesos
-export CLEAN_PHASE="true"
-export CLEAN_CACHE=1
+#export CLEAN_PHASE="true"
+#export CLEAN_CACHE=1
 build_all ${BUILD_ARGS}
