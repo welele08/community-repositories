@@ -18,10 +18,11 @@ load_env_from_yaml build.yaml
 export SKIP_PORTAGE_SYNC="${SKIP_PORTAGE_SYNC:-1}"
 export EQUO_MIRRORSORT="${EQUO_MIRRORSORT:-0}"
 export DISTFILES=/usr/portage/distfiles
+export PRE_SCRIPT_COMMANDS
 # Debug what env vars are being passed to the builder
 printenv | sort
 
 #export REPOSITORY_NAME=capesos
 #export CLEAN_PHASE="true"
 #export CLEAN_CACHE=1
-build_all ${BUILD_ARGS}
+#build_all ${BUILD_ARGS}
