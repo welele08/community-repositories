@@ -3,9 +3,9 @@ repository:
 build:
   script:
     pre:
-      - echo "toto"
-      #- if [ ! -e /usr/bin/gradle ] ;then ln -s /usr/bin/gradle-* /usr/bin/gradle;fi
-      - [ ! -e /usr/bin/gradle ]&&ln -s /usr/bin/gradle-* /usr/bin/gradle
+      #- echo "toto"
+      #- "if [ ! -e /usr/bin/gradle ] ;then ln -s /usr/bin/gradle-* /usr/bin/gradle;fi"
+      - "[ ! -e /usr/bin/gradle ]&&ln -s /usr/bin/gradle-* /usr/bin/gradle"
   equo:
     package:
       install:
