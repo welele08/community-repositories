@@ -21,6 +21,7 @@ export DISTFILES=/usr/portage/distfiles
 # Debug what env vars are being passed to the builder
 printenv | sort
 
+export CREATEREPO_PHASE="true"
 export REPOSITORY_NAME=capesos
 export CLEAN_PHASE="true"
 export CLEAN_CACHE=1
