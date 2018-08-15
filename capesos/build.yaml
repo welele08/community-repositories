@@ -26,3 +26,4 @@ build:
     - app-office/openoffice-bin::gentoo
     - app-doc/zeal::gentoo
     - x11-themes/capesos-artwork-wallpapers
+    - x11-themes/capesos-artwork-core
