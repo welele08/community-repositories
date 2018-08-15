@@ -5,7 +5,7 @@ build:
     pre:
       #- echo "toto"
       #- "if [ ! -e /usr/bin/gradle ] ;then ln -s /usr/bin/gradle-* /usr/bin/gradle;fi"
-      - "[ ! -e /usr/bin/gradle ]&&ln -s /usr/bin/gradle-* /usr/bin/gradle"
+      #- "[ ! -e /usr/bin/gradle ]&&ln -s /usr/bin/gradle-* /usr/bin/gradle"
   equo:
     package:
       install:
