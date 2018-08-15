@@ -9,7 +9,7 @@ build:
   equo:
     package:
       install:
-        - dev-java/gradle-bin
+#        - dev-java/gradle-bin
         #- sci-libs/lapack-reference
   emerge:
     # Install each package separately
@@ -23,3 +23,6 @@ build:
 #    - sci-mathematics/scilab::science
 #    - sci-mathematics/geogebra::gentoo
     - sci-mathematics/giac::sage-on-gentoo
+    - app-office/openoffice-bin::gentoo
+    - app-doc/zeal::gentoo
+
