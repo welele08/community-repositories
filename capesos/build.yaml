@@ -25,4 +25,4 @@ build:
     - sci-mathematics/giac::sage-on-gentoo
     - app-office/openoffice-bin::gentoo
     - app-doc/zeal::gentoo
-
+    - x11-themes/capesos-artwork-wallpapers
