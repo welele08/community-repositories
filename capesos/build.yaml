@@ -36,3 +36,4 @@ build:
     - x11-themes/capesos-artwork-isolinux
     - x11-themes/capesos-artwork-grub
     - app-misc/capesos-skel
+    - x11-themes/capesos-artwork-lightdm-slick-greeter
