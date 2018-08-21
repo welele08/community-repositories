@@ -20,7 +20,7 @@ HOMEPAGE="http://www.sabayon.org"
 LICENSE="GPL-2"
 SLOT="0"
 IUSE=""
-RDEPEND="!<=app-misc/sabayonlinux-skel-3.5-r6"
+RDEPEND="!app-misc/sabayon-skel"
 
 src_install () {
 	dodir /etc/xdg/menus
