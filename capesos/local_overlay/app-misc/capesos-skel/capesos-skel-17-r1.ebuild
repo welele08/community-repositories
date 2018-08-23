@@ -13,7 +13,7 @@ if [[ ${PV} == "9999" ]] ; then
 else
 	SRC_URI="https://github.com/${MY_AUTHOR}/${MY_PN}/archive/${PVR}.tar.gz -> ${PN}-${PVR}.tar.gz"
 	KEYWORDS="~amd64 ~arm ~x86"
-	S="${WORKDIR}/${MY_PN}-${PVR}"
+	S="${WORKDIR}/${MY_PN}-${PV}"
 fi
 DESCRIPTION="Capesos Linux skel tree"
 HOMEPAGE="http://www.sabayon.org"
