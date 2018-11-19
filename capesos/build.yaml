@@ -12,9 +12,9 @@ build:
       install:
 #        - dev-java/gradle-bin
         #- sci-libs/lapack-reference
-      remove:
-         - x11-themes/sabayon-artwork-isolinux	
-         - x11-themes/sabayon-artwork-grub	
+#      remove:
+#         - x11-themes/sabayon-artwork-isolinux	
+#         - x11-themes/sabayon-artwork-grub	
   emerge:
     # Install each package separately
     split_install: 1
