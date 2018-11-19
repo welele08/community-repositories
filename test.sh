@@ -18,6 +18,7 @@ load_env_from_yaml build.yaml
 export SKIP_PORTAGE_SYNC="${SKIP_PORTAGE_SYNC:-1}"
 export EQUO_MIRRORSORT="${EQUO_MIRRORSORT:-0}"
 export DISTFILES=/usr/portage/distfiles
+export PORTAGE_CACHE=/usr/portage
 # Debug what env vars are being passed to the builder
 printenv | sort
 
