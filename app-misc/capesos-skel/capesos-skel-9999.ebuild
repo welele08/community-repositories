@@ -30,7 +30,7 @@ src_install () {
 	dodir /usr/share/desktop-directories
 	cp "${FILESDIR}"/4.0.97/xdg/*.directory "${D}"/usr/share/desktop-directories/
 	dodir /usr/share/icons/hicolor/scalables/capes
-	cp -a  "${FILEDIR}"/4.0.97/img/button.svg "${D}"/usr/share/icons/hicolor/scalable/capes
+	cp -a  "${FILESDIR}"/4.0.97/img/button.svg "${D}"/usr/share/icons/hicolor/scalable/capes
 
 	dodir /usr/share/sabayon
 	cp -a "${FILESDIR}"/4.0.97/* "${D}"/usr/share/sabayon/
