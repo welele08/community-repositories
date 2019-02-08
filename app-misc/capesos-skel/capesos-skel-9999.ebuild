@@ -29,7 +29,7 @@ src_install () {
 	# Sabayon Menu
 	dodir /usr/share/desktop-directories
 	cp "${FILESDIR}"/4.0.97/xdg/*.directory "${D}"/usr/share/desktop-directories/
-	dodir /usr/share/icons/hicolor/scalables/capes
+	dodir /usr/share/icons/hicolor/scalable/capes
 	cp -a  "${FILESDIR}"/4.0.97/img/button.svg "${D}"/usr/share/icons/hicolor/scalable/capes
 
 	dodir /usr/share/sabayon
