@@ -20,7 +20,7 @@ HOMEPAGE="http://www.sabayon.org"
 LICENSE="GPL-2"
 SLOT="0"
 IUSE=""
-RDEPEND="!app-misc/sabayon-skel"
+RDEPEND="!app-misc/sabayon-skel x11-theme/Humanity-Dark-Aqua-icon-theme"
 
 src_install () {
 	dodir /etc/xdg/menus
