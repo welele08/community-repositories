@@ -12,9 +12,7 @@ LICENSE="CCPL-Attribution-ShareAlike-3.0"
 SLOT="0"
 KEYWORDS="~arm ~x86 ~amd64"
 IUSE=""
-RDEPEND="
-	 !<x11-themes/sabayon-artwork-core-14
-"
+RDEPEND="!<x11-themes/sabayon-artwork-core-14"
 
 S="${WORKDIR}/${PN}"
 
