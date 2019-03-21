@@ -1,7 +1,8 @@
 # Copyright 2004-2018 Sabayon
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=5
+inherit desktop
 MY_AUTHOR="welele08"
 MY_PN="skel"
 
