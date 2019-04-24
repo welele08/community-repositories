@@ -24,7 +24,7 @@ S="${WORKDIR}"
 
 src_install() {
         insinto /usr/share/pixmaps
-        doins ${FILESDIR}/sabayon-logo.png
+        doins ${FILESDIR}/capesos-logo.png
 }
 
 pkg_postinst() {
