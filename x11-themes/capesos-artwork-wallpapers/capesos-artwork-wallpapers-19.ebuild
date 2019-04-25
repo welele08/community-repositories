@@ -33,7 +33,7 @@ src_install() {
 	cd "${S}"/background || die
 	insinto /usr/share/backgrounds
 	doins *.png *.jpg
-	newins sabayonlinux.png sabayonlinux-nvidia.png
+	newins capesos.png capesos-nvidia.png
 	dosym /usr/share/backgrounds /usr/share/wallpapers/Sabayon
 }
 
