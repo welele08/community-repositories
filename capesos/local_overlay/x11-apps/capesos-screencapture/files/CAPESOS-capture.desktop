@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Exec=CAPESOS-capture.sh
+Icon=applets-screenshooter
+StartupNotify=false
+Terminal=false
+Categories=CAPESOS;
+OnlyShowIn=XFCE;
+Name=Outil de capture d'écran
+Comment=Effectuer une capture d'écran
