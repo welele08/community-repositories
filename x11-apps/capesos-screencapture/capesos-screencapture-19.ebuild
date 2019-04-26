@@ -11,7 +11,8 @@ SLOT="0"
 KEYWORDS="amd64 x86"
 IUSE=""
 
-DEPEND="xfce-extra/xfce4-screenshooter"
+DEPEND="xfce-extra/xfce4-screenshooter
+		x11-misc/xdialog"
 RDEPEND="${DEPEND}"
 BDEPEND=""
 MY_AUTHOR="welele08"
@@ -28,7 +29,7 @@ fi
 S="${WORKDIR}/${PN}-${PVR}"
 
 src_install () {
-        cd "$FILEDIR"
+        cd "$FILESDIR"
         dodir /usr/share/applications
         insinto /usr/share/applications
         doins *.desktop
