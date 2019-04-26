@@ -16,7 +16,7 @@ RDEPEND="${DEPEND}"
 S="${FILESDIR}"
 
 src_install () {
-        insinto /usr/local/bin
-        doins blackscreen
+        dobin blackscreen
+
 }
 
