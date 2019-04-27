@@ -14,18 +14,6 @@ IUSE=""
 DEPEND="gnome-extra/gnome-calculator"
 RDEPEND="${DEPEND}"
 BDEPEND=""
-MY_AUTHOR="welele08"
-MY_PN="gnome-calculator-capesos-icon"
-if [[ ${PV} == "9999" ]] ; then
-        inherit git-r3
-        SRC_URI=""
-        EGIT_REPO_URI="https://github.com/${MY_AUTHOR}/${MY_PN}.git"
-        KEYWORDS=""
-else
-        SRC_URI="https://github.com/${MY_AUTHOR}/${MY_PN}/archive/${PVR}.tar.gz -> ${PN}-${PVR}.tar.gz"
-        KEYWORDS="~amd64 ~arm ~x86"
-fi
-S="${WORKDIR}/${PN}-${PVR}"
 
 src_install () {
         cd "$FILESDIR"
