@@ -14,7 +14,7 @@ IUSE=""
 DEPEND="gnome-extra/gnome-calculator"
 RDEPEND="${DEPEND}"
 BDEPEND=""
-
+S=$FILEDIR
 src_install () {
         cd "$FILESDIR"
         dodir /usr/share/applications
