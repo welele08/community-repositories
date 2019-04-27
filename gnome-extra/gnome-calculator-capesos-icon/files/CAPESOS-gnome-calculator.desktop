@@ -1,0 +1,16 @@
+[Desktop Entry]
+Name=Calculator
+Name[fr]=Calculatrice
+Comment=Perform arithmetic, scientific or financial calculations
+Comment[fr]=Effectue des calculs arithmétiques, scientifiques ou financiers
+Keywords=calculation;arithmetic;scientific;financial;
+Keywords[fr]=calcul;arithmétique;scientifique;finances;financier;
+Exec=gnome-calculator
+Icon=accessories-calculator
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;Utility;Calculator;CAPESOS-Logiciels;
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=gnome-calculator
+X-GNOME-Bugzilla-Component=general
