@@ -14,9 +14,8 @@ IUSE=""
 DEPEND="gnome-extra/gnome-calculator"
 RDEPEND="${DEPEND}"
 BDEPEND=""
-S=$FILEDIR
+S=$FILESDIR
 src_install () {
-        cd "$FILESDIR"
         dodir /usr/share/applications
         insinto /usr/share/applications
         doins *.desktop
