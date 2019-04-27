@@ -24,7 +24,7 @@ else
         SRC_URI="https://github.com/${MY_AUTHOR}/${MY_PN}/archive/${PVR}.tar.gz -> ${PN}-${PVR}.tar.gz"
         KEYWORDS="~amd64 ~arm ~x86"
 fi
-S="${WORKDIR}/${PN}-${PVR}"
+S="${WORKDIR}/${MY_PN}-${PVR}"
 
 src_install () {
         cd "$S/applications"
@@ -33,7 +33,7 @@ src_install () {
         doins *.desktop
 		cd "$S/mime"
 		dodir /usr/share/mime/packages
-		insino /usr/share/mime/packages
+		insinto /usr/share/mime/packages
 		doins *.xml
 		doicon -s scalable "${FILESDIR}"/icons/*.svg
 }
