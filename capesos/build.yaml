@@ -37,3 +37,5 @@ build:
     - x11-themes/capesos-artwork-grub
     - app-misc/capesos-skel
     - x11-themes/capesos-artwork-lightdm-slick-greeter
+    - x11-app/capesos-screencapture
+    - x11-misc/blackscreen
