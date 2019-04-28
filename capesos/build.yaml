@@ -42,3 +42,4 @@ build:
     - dev-python/notebook-capesos-icon
     - gnome-extra/gnome-calculator-capesos-icon
     - sci-mathematics/xcas-icon-capesos
+    - dev-db/sqlitebrowser-icon-capesos
