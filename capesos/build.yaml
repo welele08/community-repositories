@@ -43,3 +43,4 @@ build:
     - gnome-extra/gnome-calculator-capesos-icon
     - sci-mathematics/xcas-icon-capesos
     - dev-db/sqlitebrowser-icon-capesos
+    - app-doc/zeal-icon-capesos
