@@ -9,6 +9,7 @@ HOMEPAGE="capesos.alwaysdata.net"
 LICENSE=""
 SLOT="0"
 IUSE=""
+inherit desktop
 
 DEPEND="sci-mathematics/giac[fltk]"
 RDEPEND="${DEPEND}"
@@ -35,7 +36,9 @@ src_install () {
 		dodir /usr/share/mime/packages
 		insinto /usr/share/mime/packages
 		doins *.xml
-		doicon -s scalable "${FILESDIR}"/icons/*.svg
+		doicon -s scalable "$S"/icons/Xcas_App.svg
+ 		doicon -s scalable "$S"/icons/qcas.svg
+ 		doicon -c mime -s scalable "$S"/icons/application-*.svg
 }
 
 
