@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
-
+inherit desktop
 DESCRIPTION="Customisation xcas pour CAPESOS"
 HOMEPAGE="capesos.alwaysdata.net"
 
@@ -35,7 +35,9 @@ src_install () {
 		dodir /usr/share/mime/packages
 		insinto /usr/share/mime/packages
 		doins *.xml
-		doicon -s scalable "${FILESDIR}"/icons/*.svg
+		doicon -s scalable "$S"/icons/Xcas_App.svg
+		doicon -s scalable "$S"/icons/qcas.svg
+		doicon -c mime -s scalable "$S"/icons/application-*.svg
 }
 
 

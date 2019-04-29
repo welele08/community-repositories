@@ -9,7 +9,7 @@ HOMEPAGE="capesos.alwaysdata.net"
 LICENSE=""
 SLOT="0"
 IUSE=""
-
+inherit desktop
 DEPEND="dev-db/sqlitebrowser"
 RDEPEND="${DEPEND}"
 BDEPEND=""
@@ -36,6 +36,8 @@ src_install () {
 		insino /usr/share/mime/packages
 		doins *.xml
 		doicon -s scalable "${FILESDIR}"/icons/*.svg
+		doicon -s scalable "$S"/icons/*.svg
+		doicon -c mime -s scalable "$S"/icons/application-*.svg
 }
 
 
