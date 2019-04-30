@@ -6,7 +6,7 @@ EAPI=7
 DESCRIPTION="Mathematics software for geometry"
 HOMEPAGE="https://www.geogebra.org"
 
-
+inherit gnome2-utils
 LICENSE="Geogebra CC-BY-NC-SA-3.0 GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
@@ -24,10 +24,17 @@ src_install(){
 	cd GeoGebra-Linux-Portable-5*
 	insinto /usr/share/
 	doins -r geogebra/
-	cd ${S}/geogebra-${ICON_PV}
+	cd geogebra/
+	exeinto /usr/share/geogebra
+	doexe geogebra
+	cd ${S}/geogebra-icon-${ICON_PV}
 	dobin geogebra-portable
 	doins -r applications
 	doins -r icons
-	doins -r mimes
+	doins -r mime
 }
+pkg_preinst() { gnome2_icon_savelist; }
+pkg_postinst() { gnome2_icon_cache_update; }
+pkg_postrm() { gnome2_icon_cache_update; }
+
 
