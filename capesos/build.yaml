@@ -27,7 +27,7 @@ build:
     - sabayon-distro
   target:
 #    - sci-mathematics/scilab::science
-#    - sci-mathematics/geogebra::gentoo
+    - sci-mathematics/geogebra
     - sci-mathematics/giac::sage-on-gentoo
     - app-office/openoffice-bin::gentoo
     - app-doc/zeal::gentoo
@@ -44,3 +44,4 @@ build:
     - sci-mathematics/xcas-icon-capesos
     - dev-db/sqlitebrowser-icon-capesos
     - app-doc/zeal-icon-capesos
+    - x11-themes/Humanity-Dark-Aqua-icon-theme
