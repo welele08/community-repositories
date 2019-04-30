@@ -2,7 +2,6 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
-
 DESCRIPTION="Customisation xcas pour CAPESOS"
 HOMEPAGE="capesos.alwaysdata.net"
 
@@ -10,7 +9,7 @@ LICENSE=""
 SLOT="0"
 IUSE=""
 inherit desktop
-
+#inherit gnome2-utils
 DEPEND="sci-mathematics/giac[fltk]"
 RDEPEND="${DEPEND}"
 BDEPEND=""
@@ -37,8 +36,11 @@ src_install () {
 		insinto /usr/share/mime/packages
 		doins *.xml
 		doicon -s scalable "$S"/icons/Xcas_App.svg
- 		doicon -s scalable "$S"/icons/qcas.svg
- 		doicon -c mime -s scalable "$S"/icons/application-*.svg
+		doicon -s scalable "$S"/icons/qcas.svg
+		doicon -c mime -s scalable "$S"/icons/application-*.svg
 }
 
+pkg_preinst() { gnome2_icon_savelist; }
+pkg_postinst() { gnome2_icon_cache_update; }
+pkg_postrm() { gnome2_icon_cache_update; }
 
