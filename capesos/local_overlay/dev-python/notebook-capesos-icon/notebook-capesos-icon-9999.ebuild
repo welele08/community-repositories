@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=5
-inherit desktop
+inherit desktop gnome2-utils
 MY_AUTHOR="welele08"
 MY_PN="skel"
 
@@ -22,3 +22,7 @@ src_install () {
 	doins CAPESOS-jupyter.desktop
 	doicon -s scalable "${FILESDIR}"/jupyter.svg
 }
+pkg_preinst() { gnome2_icon_savelist; }
+pkg_postinst() { gnome2_icon_cache_update; }
+pkg_postrm() { gnome2_icon_cache_update; }
+

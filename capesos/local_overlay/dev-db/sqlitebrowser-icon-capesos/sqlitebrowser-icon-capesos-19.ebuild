@@ -9,7 +9,7 @@ HOMEPAGE="capesos.alwaysdata.net"
 LICENSE=""
 SLOT="0"
 IUSE=""
-inherit desktop
+inherit desktop gnome2-utils
 DEPEND="dev-db/sqlitebrowser"
 RDEPEND="${DEPEND}"
 BDEPEND=""
@@ -39,5 +39,9 @@ src_install () {
 		doicon -s scalable "$S"/icons/*.svg
 		doicon -c mime -s scalable "$S"/icons/application-*.svg
 }
+
+pkg_preinst() { gnome2_icon_savelist; }
+pkg_postinst() { gnome2_icon_cache_update; }
+pkg_postrm() { gnome2_icon_cache_update; }
 
 
