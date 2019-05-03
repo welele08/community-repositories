@@ -33,9 +33,8 @@ src_install () {
         doins *.desktop
 		cd "$S/mime"
 		dodir /usr/share/mime/packages
-		insino /usr/share/mime/packages
+		insinto /usr/share/mime/packages
 		doins *.xml
-		doicon -s scalable "${FILESDIR}"/icons/*.svg
 		doicon -s scalable "$S"/icons/*.svg
 		doicon -c mime -s scalable "$S"/icons/application-*.svg
 }
