@@ -18,6 +18,9 @@ build:
   emerge:
     # Install each package separately
     split_install: 1
+    jobs: 12
+    remove : 
+        - app-misc/sabayon-skel
 #    skip_sync: 0
     features: assume-digests binpkg-logs compressdebug config-protect-if-modified distlocks ebuild-locks fixlafiles merge-sync news parallel-fetch preserve-libs protect-owned -sandbox sfperms splitdebug strict unknown-features-warn unmerge-logs unmerge-orphans userfetch usersandbox usersync xattr -userpriv
   overlays:
