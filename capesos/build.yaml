@@ -21,6 +21,7 @@ build:
     # Install each package separately
     split_install: 1
     jobs: 12
+    webrsync: 0
     remove : 
         - app-misc/sabayon-skel
 #    skip_sync: 0
