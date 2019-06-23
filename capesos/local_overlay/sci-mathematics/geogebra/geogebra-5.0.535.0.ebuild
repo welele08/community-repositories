@@ -13,7 +13,7 @@ KEYWORDS="~amd64 ~x86"
 IUSE=""
 ICON_PV="19"
 SRC_URI="https://github.com/welele08/geogebra-icon/archive/${ICON_PV}.tar.gz -> geogebra-icon-${ICON_PV}.tar.gz
-		ftp://avril-simonet.hd.free.fr/distfiles/GeoGebra-Linux-Portable-5-0-535-0.tar.bz2
+		http://avril-simonet.hd.free.fr/distfiles/GeoGebra-Linux-Portable-5-0-535-0.tar.bz2
 		http://download.geogebra.org/installers/5.0/GeoGebra-Linux-Portable-5-0-535-0.tar.bz2"
 DEPEND="virtual/jre"
 RDEPEND="${DEPEND}"
