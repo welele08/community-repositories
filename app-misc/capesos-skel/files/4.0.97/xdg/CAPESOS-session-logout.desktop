@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Exec=xfce4-session-logout
+Icon=system-log-out
+StartupNotify=false
+Terminal=false
+Categories=CAPESOS;
+OnlyShowIn=XFCE;
+Name=Log Out
+Name[fr]=Déconnexion
+Comment=Log out of the Xfce Desktop
+Comment[fr]=Fermer la session du bureau Xfce

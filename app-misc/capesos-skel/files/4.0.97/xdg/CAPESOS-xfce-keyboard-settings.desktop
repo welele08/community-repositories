@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.0
+Name=Keyboard
+Name[fr]=Clavier
+Comment=Edit keyboard settings and application shortcuts
+Comment[fr]=Éditer les paramètres du clavier et les raccourcis des applications
+Exec=xfce4-keyboard-settings
+Icon=preferences-desktop-keyboard
+Terminal=false
+Type=Application
+Categories=CAPESOS-Parametres;
+StartupNotify=true
+OnlyShowIn=XFCE;
+X-XfcePluggable=true
+X-XfceHelpPage=keyboard

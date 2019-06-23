@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.0
+Name=Display
+Name[fr]=Affichage
+Comment=Configure screen settings and layout
+Comment[fr]=Configurer les paramètres et la disposition des écrans
+Exec=xfce4-display-settings
+Icon=video-display
+Terminal=false
+Type=Application
+Categories=CAPESOS-Parametres;
+StartupNotify=true
+OnlyShowIn=XFCE;
+X-XfcePluggable=true
+X-XfceHelpPage=display
