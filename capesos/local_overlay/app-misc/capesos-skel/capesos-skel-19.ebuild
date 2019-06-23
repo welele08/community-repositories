@@ -29,6 +29,8 @@ src_install () {
 	# Sabayon Menu
 	dodir /usr/share/desktop-directories
 	cp "${FILESDIR}"/4.0.97/xdg/*.directory "${D}"/usr/share/desktop-directories/
+	dodir /usr/share/applications
+	cp "${FILESDIR}"/4.0.97/xdg/CAPESOS*.desktop "${D}"/usr/share/applications/
 	dodir /usr/share/icons/hicolor/scalable/apps
 	cp -a  "${FILESDIR}"/4.0.97/img/button.svg "${D}"/usr/share/icons/hicolor/scalable/apps
 	cp -a  "${FILESDIR}"/4.0.97/img/blackboard.svg "${D}"/usr/share/icons/hicolor/scalable/apps

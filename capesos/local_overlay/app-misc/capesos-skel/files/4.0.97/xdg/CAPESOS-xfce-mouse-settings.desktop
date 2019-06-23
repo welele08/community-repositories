@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=1.0
+Name=Mouse
+Name[fr]=Souris
+Comment=Edit keyboard settings and application shortcuts
+Comment[fr]=Éditer les paramètres de la souris
+Exec=xfce4-mouse-settings
+Icon=input-mouse
+Terminal=false
+Type=Application
+Categories=CAPESOS-Parametres;
+StartupNotify=true
+OnlyShowIn=XFCE;
+X-XfcePluggable=true
+X-XfceHelpPage=keyboard
