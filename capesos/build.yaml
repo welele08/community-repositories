@@ -52,3 +52,5 @@ build:
     - dev-db/sqlitebrowser-icon-capesos
     - app-doc/zeal-icon-capesos
     - x11-themes/Humanity-Dark-Aqua-icon-theme
+    - app-office/libreoffice-icon-capesos
+    - app-doc/ressources-officielles-math
