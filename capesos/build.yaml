@@ -54,3 +54,4 @@ build:
     - x11-themes/Humanity-Dark-Aqua-icon-theme
     - app-office/libreoffice-icon-capesos
     - app-doc/ressources-officielles-math
+    - sci-calculators/Numworks
