@@ -20,7 +20,7 @@ HOMEPAGE="http://www.sabayon.org"
 LICENSE="GPL-2"
 SLOT="0"
 IUSE=""
-RDEPEND="!app-misc/sabayon-skel x11-themes/Humanity-Dark-Aqua-icon-theme www-client/chromium app-text/lecteur_pdf"
+RDEPEND="!app-misc/sabayon-skel x11-themes/Humanity-Dark-Aqua-icon-theme www-client/chromium app-text/lecteur_pdf x11-themes/Ambiance-Flat-Aqua"
 
 src_install () {
 	dodir /etc/xdg/menus
