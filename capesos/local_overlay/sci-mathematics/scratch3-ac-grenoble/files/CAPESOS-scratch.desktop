@@ -1,0 +1,12 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=Scratch 3
+GenericName=De l'algorithmique visuelle 
+Comment=Faites évoluer un sprite dans le plan
+Exec=chromium /usr/share/CAPES/scratch/index.htm
+Icon=scratch
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Education;Math;CAPESOS-Logiciels;
+MimeType=application/vnd.scratch.file;
