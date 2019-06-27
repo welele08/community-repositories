@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
    <mime-type type="application/vnd.scratch.file">
-     <comment>Fichier Scratch 2</comment>
+     <comment>Fichier Scratch</comment>
      <glob pattern="*.sb3"/>
    </mime-type>
 </mime-info>
