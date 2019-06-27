@@ -1,0 +1,12 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=Pyzo
+GenericName=Editeur Python
+Comment=Anciennement IEP
+Exec=pyzo %F
+Icon=pyzo
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Education;Math;CAPESOS-Logiciels;
+MimeType=application/vnd.pyzo.file;text/x-python

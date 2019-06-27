@@ -18,8 +18,8 @@ KEYWORDS="~amd64 ~arm ~x86"
 S="${WORKDIR}/${PN}"
 
 src_install () {
-        cd "$S"/bin
-        dodir /usr/bin
+		cd "$S"/bin
+		dodir /usr/bin
 		dobin pyzo
 		cd "$S/lib64/python3.6/site-packages/"
 		dodir /usr/lib/python3.6/site-packages
@@ -27,6 +27,10 @@ src_install () {
 		doins -r py*
 		doicon -s scalable "$S"/icons/apps/*.svg
 		doicon -c mime -s scalable "$S"/icons/mimes/*.svg
+		cd "${FILESDIR}"
+		dodir /usr/share/applications/
+		insinto /usr/share/applications/
+		doins *.desktop
 }
 
 pkg_postinst() { xdg_icon_cache_update; }
