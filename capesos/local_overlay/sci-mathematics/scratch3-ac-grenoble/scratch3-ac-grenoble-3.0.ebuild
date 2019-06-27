@@ -27,10 +27,12 @@ src_install () {
 		doins *.desktop
 		doicon -s scalable "${FILESDIR}"/apps/*.svg
 		doicon -c mime -s scalable "${FILESDIR}"/mimes/*.svg
+		insinto /usr/share/mime/packages/
+		doins *.xml
 }
 
-pkg_postinst() { xdg_icon_cache_update; }
-pkg_postrm() { xdg_icon_cache_update; }
+pkg_postinst() { xdg_icon_cache_update; xdg_mimeinfo_database_update;}
+pkg_postrm() { xdg_icon_cache_update; xdg_mimeinfo_database_update;}
 
 
 
