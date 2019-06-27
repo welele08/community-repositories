@@ -8,5 +8,5 @@ Icon=pyzo
 Terminal=false
 Type=Application
 StartupNotify=true
-Categories=Education;Math;CAPESOS-Logiciels;
+Categories=Education;Math;CAPESOS-Logiciels
 MimeType=application/vnd.pyzo.file;text/x-python
