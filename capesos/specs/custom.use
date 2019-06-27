@@ -1,1 +1,2 @@
 sci-mathematics/giac fltk
+net-analyzer/zabbix -proxy -server
