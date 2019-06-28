@@ -59,4 +59,4 @@ build:
     - sci-mathematics/scratch3-ac-grenoble
     - app-text/lecteur_pdf
     - net-analyzer/zabbix
-
+    - app-docs/numpy-dash-docset
