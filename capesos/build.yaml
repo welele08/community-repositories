@@ -32,7 +32,7 @@ build:
     - sabayon
     - sabayon-distro
   target:
-#    - sci-mathematics/scilab::science
+    - sci-mathematics/scilab
     - sci-mathematics/geogebra
     - sci-mathematics/giac::sage-on-gentoo
     - app-office/openoffice-bin::gentoo
@@ -59,3 +59,4 @@ build:
     - sci-mathematics/scratch3-ac-grenoble
     - app-text/lecteur_pdf
     - net-analyzer/zabbix
+
