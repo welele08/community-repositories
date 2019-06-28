@@ -25,8 +25,12 @@ src_install () {
 		dodir /usr/lib/python3.6/site-packages
 		insinto /usr/lib/python3.6/site-packages
 		doins -r py*
-		doicon -s scalable "$S"/icons/apps/*.svg
-		doicon -c mime -s scalable "$S"/icons/mimes/*.svg
+		dodir /usr/share/icons/Humanity-Dark-Aqua/apps/scalable
+		dodir /usr/share/icons/Humanity-Dark-Aqua/mimes/scalable
+		insinto /usr/share/icons/Humanity-Dark-Aqua/apps/scalable
+		doins "$S"/icons/apps/*.svg
+		insinto /usr/share/icons/Humanity-Dark-Aqua/mimes/scalable
+		doins "$S"/icons/mimes/*.svg
 		cd "${FILESDIR}"
 		dodir /usr/share/applications/
 		insinto /usr/share/applications/
