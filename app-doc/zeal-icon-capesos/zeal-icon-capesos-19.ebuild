@@ -19,6 +19,9 @@ src_install () {
         dodir /usr/share/applications
         insinto /usr/share/applications
         doins *.desktop
+		dodir /etc/skel/.config/Zeal/
+		insinto /etc/skel/.config/Zeal/
+		doins *.conf
 }
 
 
