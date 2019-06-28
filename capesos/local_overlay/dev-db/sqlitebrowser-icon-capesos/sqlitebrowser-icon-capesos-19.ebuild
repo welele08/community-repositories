@@ -27,16 +27,20 @@ fi
 S="${WORKDIR}/${PN}-${PVR}"
 
 src_install () {
-        cd "$S/applications"
-        dodir /usr/share/applications
-        insinto /usr/share/applications
-        doins *.desktop
+		cd "$S/applications"
+		dodir /usr/share/applications
+		insinto /usr/share/applications
+		doins *.desktop
 		cd "$S/mime"
 		dodir /usr/share/mime/packages
 		insinto /usr/share/mime/packages
 		doins *.xml
-		doicon -s scalable "$S"/icons/*.svg
-		doicon -c mime -s scalable "$S"/icons/application-*.svg
+		dodir /usr/share/icons/Humanity-Dark-Aqua/apps/scalable
+		dodir /usr/share/icons/Humanity-Dark-Aqua/mimes/scalable
+		insinto /usr/share/icons/Humanity-Dark-Aqua/apps/scalable
+		doins "$S"/icons/sqlite*.svg
+		insinto /usr/share/icons/Humanity-Dark-Aqua/mimes/scalable
+		doins "$S"/icons/application-*.svg
 }
 
 pkg_preinst() { gnome2_icon_savelist; }
