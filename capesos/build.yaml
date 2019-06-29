@@ -58,3 +58,7 @@ build:
     - app-text/lecteur_pdf
     - net-analyzer/zabbix
     - app-doc/numpy-dash-docset
+    - app-doc/matplotlib-dash-docset
+    - app-doc/python2-dash-docset
+    - app-doc/python3-dash-docset
+    - app-doc/scipy-dash-docset
