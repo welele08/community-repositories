@@ -3,7 +3,7 @@
 Name=Scilab
 GenericName=Logiciel de calcul numérique 
 Comment=Environnement de calcul numérique
-Exec=bash -c "GTK_DATA_PREFIX= GTK2_RC_FILES=/usr/bin/scilab-5.5.2/gtk-2.0/gtkrc scilab"
+Exec=/usr/bin/scilab
 Icon=scilab
 Terminal=false
 Type=Application

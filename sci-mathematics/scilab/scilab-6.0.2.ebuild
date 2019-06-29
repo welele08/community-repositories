@@ -22,6 +22,8 @@ src_install(){
 		dodir /usr/bin
 		insinto /usr/bin
 		doins -r scilab-6.0.2
+		exeinto /usr/bin/scilab-6.0.2/bin
+		doexe scilab-6.0.2/bin/scilab*
 		dosym ${EPREFIX}/usr/bin/scilab-6.0.2/bin/scilab ${EPREFIX}/usr/bin/scilab
 		dosym ${EPREFIX}/usr/bin/scilab-6.0.2/bin/scilab-cli ${EPREFIX}/usr/bin/scilab-cli
 		dosym ${EPREFIX}/usr/bin/scilab-6.0.2/bin/scilab-adv-cli ${EPREFIX}/usr/bin/scilab-adv-cli
