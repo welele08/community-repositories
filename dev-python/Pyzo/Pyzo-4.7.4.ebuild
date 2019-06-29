@@ -23,7 +23,7 @@ src_install () {
 		dobin pyzo
 		cd $S/skel
 		insinto /etc/skel
-		doins -r .local
+		doins -r .pyzo
 		cd "$S/lib64/python3.6/site-packages/"
 		dodir /usr/lib/python3.6/site-packages
 		insinto /usr/lib/python3.6/site-packages
