@@ -35,11 +35,9 @@ build:
     - sci-mathematics/scilab
     - sci-mathematics/geogebra
     - sci-mathematics/giac::sage-on-gentoo
-    - app-office/openoffice-bin::gentoo
     - app-doc/zeal::gentoo
     - x11-themes/capesos-artwork-wallpapers
     - x11-themes/capesos-artwork-core
-    - x11-themes/capesos-artwork-isolinux
     - x11-themes/capesos-artwork-grub
     - app-misc/capesos-skel
     - x11-themes/capesos-artwork-lightdm-slick-greeter
@@ -59,4 +57,4 @@ build:
     - sci-mathematics/scratch3-ac-grenoble
     - app-text/lecteur_pdf
     - net-analyzer/zabbix
-    - app-docs/numpy-dash-docset
+    - app-doc/numpy-dash-docset
