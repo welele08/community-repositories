@@ -19,9 +19,9 @@ src_install () {
 		dodir /usr/share/applications
 		insinto /usr/share/applications
 		doins *.desktop
-		dodir /usr/share/mime/packages/
-		insinto /usr/share/mime/packages/
-		doins *.xml
+		#dodir /usr/share/mime/packages/
+		#insinto /usr/share/mime/packages/
+		#doins *.xml
 		dodir /usr/share/icons/Humanity-Dark-Aqua/apps/scalable
 		insinto /usr/share/icons/Humanity-Dark-Aqua/apps/scalable
 		doins apps/*.svg
