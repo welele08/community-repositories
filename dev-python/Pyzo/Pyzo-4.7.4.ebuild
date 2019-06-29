@@ -21,6 +21,9 @@ src_install () {
 		cd "$S"/bin
 		dodir /usr/bin
 		dobin pyzo
+		cd $S/skel
+		insinto /etc/skel
+		doins -r .local
 		cd "$S/lib64/python3.6/site-packages/"
 		dodir /usr/lib/python3.6/site-packages
 		insinto /usr/lib/python3.6/site-packages
@@ -35,9 +38,12 @@ src_install () {
 		dodir /usr/share/applications/
 		insinto /usr/share/applications/
 		doins *.desktop
+		dodir /usr/share/mime/packages
+		insinto /usr/share/mime/packages
+		doins *.xml
 }
 
-pkg_postinst() { xdg_icon_cache_update; }
-pkg_postrm() { xdg_icon_cache_update; }
+pkg_postinst() { xdg_icon_cache_update; xdg_mimeinfo_database_update;xdg_desktop_database_update;}
+pkg_postrm() { xdg_icon_cache_update;xdg_mimeinfo_database_update;xdg_desktop_database_update; }
 
 
