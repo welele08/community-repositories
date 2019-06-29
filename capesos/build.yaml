@@ -62,3 +62,4 @@ build:
     - app-doc/python2-dash-docset
     - app-doc/python3-dash-docset
     - app-doc/scipy-dash-docset
+    - dev-python/imageio
