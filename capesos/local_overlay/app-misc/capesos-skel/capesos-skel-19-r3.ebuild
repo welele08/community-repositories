@@ -39,8 +39,9 @@ src_install () {
 	dodir /usr/share/sabayon
 	cp -a "${FILESDIR}"/4.0.97/* "${D}"/usr/share/sabayon/
 	doicon "${FILESDIR}"/4.0.97/img/sabayon-weblink.png
-
 	chown root:root "${D}"/etc/skel -R
+	dodir /etc/Bureaux/Candidats/
+	fperms 555 /etc/Bureaux/Candidats/
 }
 
 pkg_postinst () {
