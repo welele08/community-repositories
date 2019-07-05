@@ -63,3 +63,4 @@ build:
     - app-doc/python3-dash-docset
     - app-doc/scipy-dash-docset
     - dev-python/imageio
+    - app-admin/lsyncd
