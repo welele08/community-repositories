@@ -64,3 +64,4 @@ build:
     - app-doc/scipy-dash-docset
     - dev-python/imageio
     - app-admin/lsyncd
+    - x11-themes/LightningBug-Dark-Blue
