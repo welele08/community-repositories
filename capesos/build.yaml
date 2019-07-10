@@ -3,7 +3,7 @@ repository:
 #  maintenance:
 build:
   script:
-    pre:
+#    pre:
       #- echo "toto"
       #- "if [ ! -e /usr/bin/gradle ] ;then ln -s /usr/bin/gradle-* /usr/bin/gradle;fi"
       #- "[ ! -e /usr/bin/gradle ]&&ln -s /usr/bin/gradle-* /usr/bin/gradle"
@@ -22,9 +22,9 @@ build:
     split_install: 1
     jobs: 12
     webrsync: 0
-    remove : 
-        - app-misc/sabayon-skel
-#    skip_sync: 0
+#    remove : 
+#        - app-misc/sabayon-skel
+    skip_sync: 0
     features: assume-digests binpkg-logs compressdebug config-protect-if-modified distlocks ebuild-locks fixlafiles merge-sync news parallel-fetch preserve-libs protect-owned -sandbox sfperms splitdebug strict unknown-features-warn unmerge-logs unmerge-orphans userfetch usersandbox usersync xattr -userpriv
   overlays:
     - science
@@ -65,5 +65,5 @@ build:
     - dev-python/imageio
     - app-admin/lsyncd
     - x11-themes/LightningBug-Dark-Blue
-    - dev-lang/python
-
+    - dev-lang/python:2
+    - dev-lang/python:3
