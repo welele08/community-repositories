@@ -65,5 +65,5 @@ build:
     - dev-python/imageio
     - app-admin/lsyncd
     - x11-themes/LightningBug-Dark-Blue
-    - dev-lang/python:2
-    - dev-lang/python:3
+    - dev-lang/python:2.7
+    - dev-lang/python:3.6
