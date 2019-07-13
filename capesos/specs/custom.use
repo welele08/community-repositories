@@ -1,4 +1,4 @@
 sci-mathematics/giac fltk
 net-analyzer/zabbix -proxy -server
-dev-lang/python tk
-
+dev-lang/python:2.7 tk
+dev-lang/python:3.6 tk
