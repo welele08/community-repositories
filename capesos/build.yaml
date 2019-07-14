@@ -67,4 +67,4 @@ build:
     - x11-themes/LightningBug-Dark-Blue
     - dev-lang/python:2.7
     - dev-lang/python:3.6
-    - net-misc/primitiveComm
+    - net-misc/capesos-primitiveComm
