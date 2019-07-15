@@ -70,3 +70,5 @@ build:
     - net-misc/capesos-primitiveComm
     - net-misc/spamMyIp
     - net-misc/capesos-vpn-config
+    - net-misc/mkhosts
+    - net-misc/test-vpn
