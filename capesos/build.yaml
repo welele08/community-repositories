@@ -69,3 +69,4 @@ build:
     - dev-lang/python:3.6
     - net-misc/capesos-primitiveComm
     - net-misc/spamMyIp
+    - net-misc/capesos-vpn-config
