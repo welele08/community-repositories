@@ -19,13 +19,15 @@ KEYWORDS="amd64 x86"
 S="${WORKDIR}/openvpn"
 
 src_install () {
-		cd "$S"
+		cd "$S/etc"
 		dodir /etc/openvpn/
 		insinto /etc/openvpn/
 		doins -r *
 		exeinto /etc/openvpn
 		doexe user-auth.sh
 		dosym /usr/lib64/systemd/system/openvpn-server@.service ${EPREFIX}/etc/systemd/system/multi-agent.target.wants/openvpn-server@server.service
+		cd "$S"
+		dosbin nommage_client.sh
 }
 
 
