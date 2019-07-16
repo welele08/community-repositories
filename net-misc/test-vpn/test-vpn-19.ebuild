@@ -11,7 +11,7 @@ SLOT="0"
 KEYWORDS="amd64 x86"
 IUSE=""
 
-DEPEND="net-vpn/openvpn net-misc/capesos-primitiveComm sys-process/cronie net-misc/mkhosts"
+DEPEND="net-vpn/openvpn net-misc/capesos-primitiveComm sys-process/cronie net-misc/mkhosts net-misc/capesos-vpn-config-client"
 RDEPEND="${DEPEND}"
 BDEPEND=""
 SRC_URI="http://avril-simonet.hd.free.fr/distfiles/test-vpn-19.tar.gz"
