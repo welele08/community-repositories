@@ -75,3 +75,4 @@ build:
     - net-misc/capesos-vpn-config-client
     - app-misc/login-script
     - net-misc/mkhosts
+    - net-misc/gestion-doc-candidat-serveur
