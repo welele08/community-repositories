@@ -22,8 +22,12 @@ src_install () {
 		cd "$S"
 		dodir /etc/openvpn/
 		insinto /etc/openvpn/
-		doins -r *
+		doins -r client
+		doins -r keys
 		dosym /usr/lib64/systemd/system/openvpn-client@.service ${EPREFIX}/etc/systemd/system/multi-agent.target.wants/openvpn-client@capesos.service
+		dosbin openvpn-preload
+		insinto /etc/systemd/system/
+		doins openvpn-preload.service
 }
 
 
