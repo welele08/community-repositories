@@ -72,3 +72,6 @@ build:
     - net-misc/capesos-vpn-config
     - net-misc/mkhosts
     - net-misc/test-vpn
+    - net-misc/capesos-vpn-config-client
+    - app-misc/login-script
+    - net-misc/mkhosts
