@@ -1,0 +1,17 @@
+#!/bin/bash
+if [ ! -e /var/log/CAPESOS/user.log ]
+then
+        exit 1
+fi
+cd /etc/logout.d/
+mkdir -p /var/log/CAPESOS
+echo "[`date +%m/%d-%H:%M:%S`] Lancement des scripts de logout pour $USER">>/var/log/CAPESOS/logout-script.log
+for i in *
+do
+        if [ -x $i ]
+        then
+                echo "[`date +%m/%d-%H:%M:%S`] Execution de $i par $USER" >>/var/log/CAPESOS/logout-script.log
+                ./$i
+        fi
+done
+
