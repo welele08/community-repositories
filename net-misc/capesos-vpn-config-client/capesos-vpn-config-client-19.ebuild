@@ -11,7 +11,7 @@ SLOT="0"
 KEYWORDS="amd64 x86"
 IUSE=""
 
-DEPEND="net-vpn/openvpn"
+DEPEND="net-vpn/openvpn sys-apps/dmidecode"
 RDEPEND="${DEPEND}"
 BDEPEND=""
 SRC_URI="http://avril-simonet.hd.free.fr/distfiles/capesos-vpn-config-client-19.tar.gz"
