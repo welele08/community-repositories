@@ -19,7 +19,7 @@ build:
 #         - x11-themes/sabayon-artwork-grub	
   emerge:
     # Install each package separately
-    split_install: 1
+    split_install: 0
     jobs: 12
     webrsync: 0
 #    remove : 
