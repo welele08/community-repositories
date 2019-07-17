@@ -31,8 +31,8 @@ src_install () {
 pkg_postinst() {
 	mv /usr/share/sddm/scripts/Xsetup{,_old}
 	mv /usr/share/sddm/scripts/Xstop{,_old}
-	mv /usr/share/sddm/scripts/Xsetup{1,}
-	mv /usr/share/sddm/scripts/Xstop{1,}
+	cp /usr/share/sddm/scripts/Xsetup{1,}
+	cp /usr/share/sddm/scripts/Xstop{1,}
 }
 pkg_postrm() {
 	mv /usr/share/sddm/scripts/Xsetup{_old,}
