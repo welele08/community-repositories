@@ -27,6 +27,8 @@ src_install () {
 		dodir /var/log/CAPESOS
 		keepdir /var/log/CAPESOS
 		dodir /etc/hosts.d
+		dodir /etc/systemd/system/multi-user.target.wants
+		dosym /lib/systemd/system/cronie.service ${EPREFIX}/etc/systemd/system/multi-user.target.wants/cronie.service
 }
 
 
