@@ -29,6 +29,8 @@ src_install () {
 		dodir /etc/hosts.d
 		dodir /etc/systemd/system/multi-user.target.wants
 		dosym /lib/systemd/system/cronie.service ${EPREFIX}/etc/systemd/system/multi-user.target.wants/cronie.service
+		dosym /usr/sbin/test-vpn.sh ${EPREFIX}/etc/local.d/test-vpn.start
 }
+
 
 
