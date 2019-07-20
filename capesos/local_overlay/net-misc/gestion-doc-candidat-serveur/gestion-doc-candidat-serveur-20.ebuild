@@ -22,7 +22,7 @@ src_install () {
 		cd "${S}"
 		insinto /etc
 		doins lsyncd-serveur.conf
-		insinto /etc/systemd/system
+		insinto /etc/systemd/user
 		doins lsyncd-serveur@.service
 		exeinto /etc/login.d/
 		doexe start-lsyncd-serveur
