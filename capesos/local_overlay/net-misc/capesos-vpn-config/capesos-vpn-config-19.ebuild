@@ -25,7 +25,7 @@ src_install () {
 		doins -r *
 		exeinto /etc/openvpn
 		doexe user-auth.sh
-		dosym /usr/lib64/systemd/system/openvpn-server@.service ${EPREFIX}/etc/systemd/system/multi-agent.target.wants/openvpn-server@server.service
+		dosym /usr/lib64/systemd/system/openvpn-server@.service ${EPREFIX}/etc/systemd/system/multi-user.target.wants/openvpn-server@server.service
 		cd "$S"
 		dosbin nommage_client.sh
 }
