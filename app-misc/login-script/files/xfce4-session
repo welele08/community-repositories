@@ -1,0 +1,37 @@
+#!/bin/bash
+
+echo "debut xfce4-session">>/tmp/login-script
+cd /etc/login.d/
+mkdir -p /var/log/CAPESOS
+echo "[`date +%m/%d-%H:%M:%S`] Lancement des scripts de login pour $USER">>/var/log/CAPESOS/login-script.log
+for i in *
+do
+	if [ -x $i ]
+	then
+		echo "[`date +%m/%d-%H:%M:%S`] Execution de $i par $USER" >>/var/log/CAPESOS/login-script.log
+		./$i
+	fi
+done
+#for script in /etc/login.d/* do
+#  echo "execution de $script a `date`">>/tmp/login-script
+  #. $script
+#done
+/usr/bin/xfce4-session
+#for script in /etc/logout.d/* do
+#  echo "execution de $script a `date`">>/tmp/logout-script
+  #. $script
+#done
+
+cd /etc/logout.d/
+mkdir -p /var/log/CAPESOS
+echo "[`date +%m/%d-%H:%M:%S`] Lancement des scripts de logout pour $USER">>/var/log/CAPESOS/logout-script.log
+for i in *
+do
+	if [ -x $i ]
+	then
+		echo "[`date +%m/%d-%H:%M:%S`] Execution de $i par $USER" >>/var/log/CAPESOS/logout-script.log
+		./$i
+	fi
+done
+
+echo "fin xfce4-session">>/tmp/login-script
