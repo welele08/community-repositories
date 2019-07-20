@@ -21,13 +21,16 @@ S="${WORKDIR}/${PN}"
 src_install () {
 		cd "${S}"
 		insinto /etc
-		doins lsyncd.conf
+		doins lsyncd-serveur.conf
 		insinto /etc/systemd/system
-		doins lsyncd@.service
+		doins lsyncd-serveur@.service
 		exeinto /etc/login.d/
-		doexe start-lsyncd
+		doexe start-lsyncd-serveur
 		exeinto /etc/logout.d/
-		doexe stop-lsyncd
+		doexe stop-lsyncd-serveur
+		insinto /etc
+		doins lsyncd-serveur.env
+		fperms 600 /etc/lsyncd-serveur.env
 }
 
 
