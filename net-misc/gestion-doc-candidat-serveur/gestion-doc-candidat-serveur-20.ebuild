@@ -30,7 +30,7 @@ src_install () {
 		doexe stop-lsyncd-serveur
 		insinto /etc
 		doins lsyncd-serveur.env
-		fperms 600 /etc/lsyncd-serveur.env
+		fperms 644 /etc/lsyncd-serveur.env
 		dodir /var/log/CAPESOS
 		touch ${ED}/var/log/CAPESOS/lsyncd-serveur.log
 		touch ${ED}/var/log/CAPESOS/lsyncd-status-serveur.log
