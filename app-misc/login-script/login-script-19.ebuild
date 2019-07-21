@@ -25,7 +25,9 @@ src_install () {
 		dodir /etc/logout.d/
 		keepdir /etc/login.d/
 		keepdir /etc/logout.d/
+		dodir /var/log/CAPESOS/
+		touch ${ED}/var/log/CAPESOS/login-script.log
+		fperms 666 /var/log/CAPESOS/login-script.log
 }
-
 
 
